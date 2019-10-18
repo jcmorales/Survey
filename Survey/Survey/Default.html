@@ -1,0 +1,785 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        .auto-style3 {
+            width: 490px;
+            height: 273px;
+        }
+        .auto-style4 {
+            width: 230px;
+        }
+        .auto-style5 {
+            width: 83px;
+        }
+        .auto-style8 {
+            width: 74%;
+        }
+        .auto-style9 {
+            width: 486px;
+        }
+        .auto-style26 {
+            width: 282px;
+            height: 62px;
+        }
+        .auto-style27 {
+            width: 290px;
+        }
+        .auto-style28 {
+            width: 155px;
+        }
+        .auto-style30 {
+            width: 412px;
+        }
+        .auto-style31 {
+            width: 147px;
+        }
+        .auto-style33 {
+            width: 291px;
+        }
+        .auto-style35 {
+            width: 483px;
+        }
+        .auto-style36 {
+            width: 76%;
+            height: 323px;
+        }
+        .auto-style37 {
+            width: 496px;
+        }
+        .auto-style39 {
+            text-align: center;
+        }
+        .auto-style41 {
+            width: 412px;
+            text-align: left;
+        }
+        .auto-style42 {
+            width: 505px;
+            text-align: left;
+        }
+        .auto-style43 {
+            width: 119px;
+        }
+        .auto-style44 {
+            text-align: left;
+        }
+        .auto-style45 {
+            width: 83px;
+            text-align: left;
+        }
+        .auto-style46 {
+            width: 147px;
+            text-align: left;
+        }
+        .auto-style47 {
+            width: 230px;
+            height: 55px;
+        }
+        .auto-style48 {
+            width: 486px;
+            text-align: center;
+        }
+        .auto-style49 {
+            width: 505px;
+        }
+        </style>
+    </head>
+<body>
+    <table class="auto-style36">
+        <tr>
+            <td valign="top" class="auto-style37">
+    <table class="auto-style3" >
+            <tr>
+            <td colspan="2" class="auto-style39">
+                Current Values</td>
+        </tr>
+            <tr>
+            <td colspan="2">
+                &nbsp;</td>
+        </tr>
+		    <tr>
+		<td nowrap="true" valign="top" class="auto-style28" ><span  id="Title2">Mail:</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="Mail"
+			 FieldInternalName="Title"
+			 FieldType="SPFieldText"
+		  -->
+			<span><input type="text" value="" class="auto-style4" maxlength="255" id="Title3" title="Mail" disabled style="background:#CCCCCC"><br></span>										
+		</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style28" ><span  id="GivenName">Given Name:</span></td>
+		<td valign="top" width="350px" >
+		<!-- FieldName="GivenName"
+			 FieldInternalName="GivenName"
+			 FieldType="SPFieldText"
+		  -->
+			<span><input type="text" value="" class="auto-style4" maxlength="255" id="GivenName0" title="GivenName"  disabled style="background:#CCCCCC"><br></span>										
+		</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style28" ><span id="Country2">Country: </span></td>
+		<td valign="top" width="350px" >
+		<!-- FieldName="SiteLocation"
+			 FieldInternalName="SiteLocation"
+			 FieldType="SPFieldText"
+		  -->
+			<span dir="none"><select id="Country" title="Country" class="auto-style4" disabled style="background:#CCCCCC" name="D8" >
+                <option></option>
+            </select><br></span>	
+		</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style28" ><span id="SiteLocation2">Site Location:</span></td>
+		<td valign="top" width="350px" >
+		<!-- FieldName="Country"
+			 FieldInternalName="Country"
+			 FieldType="SPFieldText"
+		  -->
+			<span dir="none"><select id="SiteLocation" title="SiteLocation" class="auto-style27" disabled style="background:#CCCCCC" name="D7">
+                <option></option>
+            </select><br></span>	
+		</td>
+	</tr>	
+    </table>
+
+            </td>
+            <td valign="top" >
+    <table class="auto-style35" >
+        <thead>
+            <tr>
+                <td colspan="2" class="auto-style39">New Values</td>
+        </tr>
+        </thead>
+		<tbody>	
+            <tr>
+                <td colspan="2">&nbsp;</td>
+        </tr>
+		    <tr>
+		<td valign="top" class="auto-style49">
+		    <span  id="Country1">
+		Country:
+	</span>	
+		        </td>
+		<td valign="top" class="auto-style30">
+			<span dir="none"><select id="Country_New" title="Country_New" class="auto-style4" name="D5" >
+                <option></option>
+            </select></span></td>
+	</tr>	
+		    <tr>
+		<td valign="top" colspan="2">
+		    <label id="lbl_Country"> you must select you location country </label></td>
+	</tr>	
+		<tr>
+		<td valign="top" class="auto-style49" >
+		    <span id="SiteLocation1">Site Location:</span></td>
+		<td valign="top" class="auto-style30" >
+			<span dir="none"><select id="SiteLocation_New" title="SiteLocation" class="auto-style27" name="D4">
+                <option></option>
+            </select></span></td>
+	</tr>	
+		<tr>
+		<td valign="top" colspan="2" >
+		    <label id="lbl_Country0">
+            you must select you location country
+            </label>
+            </td>
+	</tr>	
+		<tr>
+		<td valign="top" class="auto-style49" >
+		    <span  id="Home_x0020_Worker0">
+		Home Worker:</span></td>
+		<td valign="top" class="auto-style30" >
+			<span dir="none"><input id="HomeWorker_New" type="checkbox" /></span></td>
+	</tr>	
+		<tr>
+		<td valign="top" colspan="2" >
+		    <label id="lbl_Country1">
+            you must select you location country
+            </label>
+            </td>
+	</tr>	
+		<tr>
+		<td valign="top" class="auto-style49" >
+		    <span  id="Ship_x0020_to_x0020_MF_x0020_sit3">
+		Ship to MF site or home:</span></td>
+		<td valign="top" class="auto-style30" >
+			<span dir="none"><select id="ShiptoMFsiteorhome_New" title="Ship to MF site or home" class="auto-style4" name="D6">
+                <option></option>
+            </select></span></td>
+            
+	</tr>	
+		<tr>
+		<td valign="top" colspan="2" >
+		    <label id="lbl_Country2">
+            you must select you location country
+            </label>
+            </td>
+	</tr>	
+		<tr>
+		<td valign="top" class="auto-style42" >
+		    <span  id="Justification3">
+		Justification
+	</span>										
+		    </td>
+		<td valign="top" class="auto-style41" >
+		    <textarea title="Justification" id="Justification4" class="auto-style26" name="S1" ></textarea></td>
+	</tr>	
+		<tr>
+		<td valign="top" class="auto-style42" >
+		    <input id="Save_User" class="auto-style43" type="button" value="Save User Data" /></td>
+		<td valign="top" class="auto-style41" >
+		    &nbsp;</td>
+	</tr>	
+        </tbody>
+    </table>
+
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        <input id="Radio1" checked="true" name="R1" type="radio" value="V1" /><input id="Radio2" checked="true" name="R2" type="radio" value="V1" /><input id="Radio3" checked="true" name="R3" type="radio" value="V1" /><input id="Radio4" checked="true" name="R4" type="radio" value="V1" />
+    </p>
+
+    <table class="auto-style8">
+        <tr>
+            <td class="auto-style48">
+                Original Values</td>
+            <td class="auto-style39">
+                Corrected Values</td>
+            </tr>
+
+        <tr>
+            <td class="auto-style9">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            </tr>
+
+        <tr>
+            <td  valign="top" class="auto-style9">
+
+    <table style="width:100%;margin-top: 8px;" border="0" cellpadding="0" cellspacing="0" role="presentation">
+		<tbody><tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="Title0">
+		<nobr>Device Name:</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="Device Name"
+			 FieldInternalName="Title"
+			 FieldType="SPFieldText"
+		  -->
+			<span dir="none"><input   type="text"  value="OWNER-PCNOVELL" maxlength="255" id="Title" title="Device Name" disabled style="background:#CCCCCC" class="auto-style4"></span></td>
+	</tr>
+		    <tr>
+		<td nowrap="true" valign="top" class="auto-style5">&nbsp;</td>
+		<td valign="top" width="350px">
+		    &nbsp;</td>
+	</tr>
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="Make">
+		<nobr>Make:</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="Make"
+			 FieldInternalName="Make"
+			 FieldType="SPFieldChoice"
+		  -->
+			<span dir="none"><select id="Make_DropDown" class="auto-style33"  title="Make" disabled style="background:#CCCCCC">                                
+                                <option selected="selected" value="CLEVO">CLEVO</option>                                
+                            </select></span></td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" colspan="2">&nbsp;</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="Model">
+		<nobr>Model:</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="Model"
+			 FieldInternalName="Model"
+			 FieldType="SPFieldChoice"
+		  -->
+			<span dir="none"><select id="Model_DropDown" title="Model" class="auto-style4" disabled style="background:#CCCCCC"><option value="P170HMx" selected="selected">P170HMx</option></select></span></td>
+	</tr>
+		<tr>
+		<td nowrap="true" valign="top" colspan="2">&nbsp;</td>
+	</tr>
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="Serial_x0020_Number">
+		<nobr>Serial Number:</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="Serial Number"
+			 FieldInternalName="Serial_x0020_Number"
+			 FieldType="SPFieldText"
+		  -->
+			<span dir="none"><input type="text" value="" maxlength="255" id="Serial_Number_" title="Serial Number"  class="auto-style4" disabled style="background:#CCCCCC" ></span></td>
+	</tr>
+		<tr>
+		<td nowrap="true" valign="top" colspan="2">&nbsp;</td>
+	</tr>
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="OS">
+		<nobr>OS:</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="OS"
+			 FieldInternalName="OS"
+			 FieldType="SPFieldChoice"
+		  -->
+			<span dir="none"><select id="OS_DropDown" title="OS" class="auto-style4" disabled style="background:#CCCCCC"><option value="Windows 10 (1803) - Redstone 4" selected="selected">Windows 10 (1803) - Redstone 4</option></select></span></td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" colspan="2">&nbsp;</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="OperatingSystemVersion">
+		<nobr>OperatingSystemVersion:&nbsp;&nbsp; </nobr>
+	&nbsp;</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="OperatingSystemVersion"
+			 FieldInternalName="OperatingSystemVersion"
+			 FieldType="SPFieldChoice"
+		  -->
+			<span dir="none"><select id="OperatingSystemVersion_DropDown" title="OperatingSystemVersion" class="auto-style4" disabled style="background:#CCCCCC"><option value="10.0 (17134)" selected="selected">10.0 (17134)</option></select></span></td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" colspan="2">&nbsp;</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="Date_x0020_Device_x0020_Assigned">
+		<nobr>Date Device Assigned:</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="Date Device Assigned"
+			 FieldInternalName="Date_x0020_Device_x0020_Assigned"
+			 FieldType="SPFieldDateTime"
+		  -->
+			<span dir="none"><input type="date" value="" maxlength="45" id="Date_x0020_Device_x0020_Assigned" title="Date Device Assigned" class="auto-style4" disabled style="background:#CCCCCC"></span>	
+		</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" colspan="2">&nbsp;</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="Device_x0020_is_x0020_Primary">
+		<nobr>Device is Primary:</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="Device is Primary"
+			 FieldInternalName="Device_x0020_is_x0020_Primary"
+			 FieldType="SPFieldBoolean"
+		  -->
+			<span dir="none"><input type="checkbox" id="Device_x0020_is_x0020_Primary" title="Device is Primary" disabled style="background:#CCCCCC"></span></td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" colspan="2">&nbsp;</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="Device_x0020_Listed_x0020_as_x00">
+		<nobr>Device Listed as Correct</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+		<!-- FieldName="Device Listed as Correct"
+			 FieldInternalName="Device_x0020_Listed_x0020_as_x00"
+			 FieldType="SPFieldBoolean"
+		  -->
+			<span dir="none"><input type="checkbox" id="Device_x0020_Listed_x0020" title="Device Listed as Correct" disabled style="background:#CCCCCC"></span></td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" colspan="2">&nbsp;</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style5"><span class="ms-h3 ms-standardheader" id="Data_x0020_Source">
+		<nobr>Data Source</nobr>
+	</span></td>
+		<td valign="top" width="350px">
+			<span dir="none"><input type="text" value="Stack B Info" maxlength="255" id="Data_x0020_Source" title="Data Source" class="" disabled style="background:#CCCCCC"></span></td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style45">&nbsp;</td>
+		<td valign="top" width="350px" class="auto-style44">
+			&nbsp;</td>
+	</tr>	
+		<tr>
+		<td nowrap="true" valign="top" class="auto-style45">&nbsp;</td>
+		<td valign="top" width="350px" class="auto-style44">
+			&nbsp;</td>
+	</tr>	
+		</tbody>
+    </table>
+            </td>
+            <td valign="top">
+                <table border="0" cellpadding="0" cellspacing="0"  role="presentation" style="width:100%;margin-top: 8px;">
+                    <tr>
+                        <td class="auto-style31" nowrap="true" valign="top"><span id="Title1" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            Device Name:</nobr> </span></td>
+                        <td valign="top" width="350px">
+		<!-- FieldName="Device Name"
+			 FieldInternalName="Title"
+			 FieldType="SPFieldText"
+		  -->
+			                <span dir="none">
+                            <input id="Title_New" class="auto-style4" maxlength="255" style="ime-mode : " title="Device Name" type="text" value="OWNER-PCNOVELL" /></span></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="true" valign="top" colspan="2">
+                            <label id="lbl_Country3">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style31" nowrap="true" valign="top"><span id="Make0" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            Make:</nobr> </span></td>
+                        <td valign="top" width="350px">
+		<!-- FieldName="Make"
+			 FieldInternalName="Make"
+			 FieldType="SPFieldChoice"
+		  -->
+			                <span dir="none">
+                            <select id="Make__New" class="auto-style4" title="Make">
+                                <option value="Bochs">Bochs</option>
+                                <option selected="selected" value="CLEVO">CLEVO</option>
+                                <option value="Dell Inc.">Dell Inc.</option>
+                                <option value="HP">HP</option>
+                                <option value="innotek GmbH">innotek GmbH</option>
+                                <option value="INTEL_">INTEL_</option>
+                                <option value="LENOVO">LENOVO</option>
+                                <option value="Parallels Software International Inc.">Parallels Software International Inc.</option>
+                                <option value="System manufacturer">System manufacturer</option>
+                                <option value="To Be Filled By O.E.M.">To Be Filled By O.E.M.</option>
+                            </select></span></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="true" valign="top" colspan="2">
+                            <label id="lbl_Country4">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style31" nowrap="true" valign="top"><span id="Model0" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            Model:</nobr> </span></td>
+                        <td valign="top" width="350px">
+		<!-- FieldName="Model"
+			 FieldInternalName="Model"
+			 FieldType="SPFieldChoice"
+		  -->
+			                <span dir="none">
+                            <select id="Model_New" title="Model">
+                                <option value="10AB003CUK">10AB003CUK</option>
+                                <option value="20A7008CUK">20A7008CUK</option>
+                                <option value="20A8S2TS05">20A8S2TS05</option>
+                                <option value="20ALCTO1WW">20ALCTO1WW</option>
+                                <option value="20AMA01KMY">20AMA01KMY</option>
+                                <option value="20AMS0W602">20AMS0W602</option>
+                                <option value="20AMS1VJ00">20AMS1VJ00</option>
+                                <option value="20AMS40W0Y">20AMS40W0Y</option>
+                                <option value="20AR000YGE">20AR000YGE</option>
+                                <option value="20AR000YUS">20AR000YUS</option>
+                                <option value="20ARS16H00">20ARS16H00</option>
+                                <option value="20AW000BCD">20AW000BCD</option>
+                                <option value="20AW000LAT">20AW000LAT</option>
+                                <option value="20AW000LFR">20AW000LFR</option>
+                                <option value="20AW000LUS">20AW000LUS</option>
+                                <option value="20B7S3VG00">20B7S3VG00</option>
+                                <option value="20B7S3WH01">20B7S3WH01</option>
+                                <option value="20BG0016US">20BG0016US</option>
+                                <option value="20BH002NUS">20BH002NUS</option>
+                                <option value="20BHS19608">20BHS19608</option>
+                                <option value="20BT000DUK">20BT000DUK</option>
+                                <option value="20BUA0KHIG">20BUA0KHIG</option>
+                                <option value="20BUA0LPIG">20BUA0LPIG</option>
+                                <option value="20BUCTO1WW">20BUCTO1WW</option>
+                                <option value="20BUS1LP02">20BUS1LP02</option>
+                                <option value="20BUS2B600">20BUS2B600</option>
+                                <option value="20BUS2B602">20BUS2B602</option>
+                                <option value="20BUS2B607">20BUS2B607</option>
+                                <option value="20BUS2B60B">20BUS2B60B</option>
+                                <option value="20BUS2B60E">20BUS2B60E</option>
+                                <option value="20CL001LGE">20CL001LGE</option>
+                                <option value="20EG000AUS">20EG000AUS</option>
+                                <option value="20EG002DBR">20EG002DBR</option>
+                                <option value="20EGA0LUIG">20EGA0LUIG</option>
+                                <option value="20F5CTO1WW">20F5CTO1WW</option>
+                                <option value="20FMCTO1WW">20FMCTO1WW</option>
+                                <option value="23252SG">23252SG</option>
+                                <option value="2349G7G">2349G7G</option>
+                                <option value="2349G7Q">2349G7Q</option>
+                                <option value="244752U">244752U</option>
+                                <option value="2537VF5">2537VF5</option>
+                                <option value="42844ZG">42844ZG</option>
+                                <option value="42844ZU">42844ZU</option>
+                                <option value="Bochs">Bochs</option>
+                                <option value="DQ57TM__">DQ57TM__</option>
+                                <option value="DQ67SW__">DQ67SW__</option>
+                                <option value="DX79SI__">DX79SI__</option>
+                                <option value="HP EliteBook 745 G3">HP EliteBook 745 G3</option>
+                                <option value="HP EliteBook 840 G3">HP EliteBook 840 G3</option>
+                                <option value="Latitude 7280">Latitude 7280</option>
+                                <option value="Latitude 7290">Latitude 7290</option>
+                                <option value="Latitude 7480">Latitude 7480</option>
+                                <option value="Latitude 7490">Latitude 7490</option>
+                                <option value="Latitude D630">Latitude D630</option>
+                                <option value="Latitude E5550">Latitude E5550</option>
+                                <option value="Latitude E6230">Latitude E6230</option>
+                                <option value="Latitude E6320">Latitude E6320</option>
+                                <option value="Latitude E6330">Latitude E6330</option>
+                                <option value="Latitude E6410">Latitude E6410</option>
+                                <option value="Latitude E6420">Latitude E6420</option>
+                                <option value="Latitude E6430">Latitude E6430</option>
+                                <option value="Latitude E6440">Latitude E6440</option>
+                                <option value="Latitude E6500">Latitude E6500</option>
+                                <option value="Latitude E6510">Latitude E6510</option>
+                                <option value="Latitude E6520">Latitude E6520</option>
+                                <option value="Latitude E6530">Latitude E6530</option>
+                                <option value="Latitude E6540">Latitude E6540</option>
+                                <option value="Latitude E7240">Latitude E7240</option>
+                                <option value="Latitude E7250">Latitude E7250</option>
+                                <option value="Latitude E7270">Latitude E7270</option>
+                                <option value="Latitude E7450">Latitude E7450</option>
+                                <option value="Latitude E7470">Latitude E7470</option>
+                                <option value="OptiPlex 390">OptiPlex 390</option>
+                                <option value="OptiPlex 7010">OptiPlex 7010</option>
+                                <option value="OptiPlex 7040">OptiPlex 7040</option>
+                                <option value="OptiPlex 7050">OptiPlex 7050</option>
+                                <option value="OptiPlex 745">OptiPlex 745</option>
+                                <option value="OptiPlex 755">OptiPlex 755</option>
+                                <option value="OptiPlex 760">OptiPlex 760</option>
+                                <option value="OptiPlex 780">OptiPlex 780</option>
+                                <option value="OptiPlex 790">OptiPlex 790</option>
+                                <option value="OptiPlex 9010">OptiPlex 9010</option>
+                                <option value="OptiPlex 9020">OptiPlex 9020</option>
+                                <option value="OptiPlex 9020M">OptiPlex 9020M</option>
+                                <option value="OptiPlex 960">OptiPlex 960</option>
+                                <option value="OptiPlex 980">OptiPlex 980</option>
+                                <option value="OptiPlex 990">OptiPlex 990</option>
+                                <option selected="selected" value="P170HMx">P170HMx</option>
+                                <option value="Parallels Virtual Platform">Parallels Virtual Platform</option>
+                                <option value="PowerEdge R410">PowerEdge R410</option>
+                                <option value="PowerEdge R710">PowerEdge R710</option>
+                                <option value="PowerEdge T640">PowerEdge T640</option>
+                                <option value="PowerVault NX300">PowerVault NX300</option>
+                                <option value="Precision 5510">Precision 5510</option>
+                                <option value="Precision 5520">Precision 5520</option>
+                                <option value="Precision 5530">Precision 5530</option>
+                                <option value="Precision 5820 Tower">Precision 5820 Tower</option>
+                                <option value="Precision 7510">Precision 7510</option>
+                                <option value="Precision M4700">Precision M4700</option>
+                                <option value="Precision M4800">Precision M4800</option>
+                                <option value="Precision T1500">Precision T1500</option>
+                                <option value="Precision T1700">Precision T1700</option>
+                                <option value="Precision T3600">Precision T3600</option>
+                                <option value="Precision T3610">Precision T3610</option>
+                                <option value="Precision Tower 5810">Precision Tower 5810</option>
+                                <option value="Precision WorkStation 390">Precision WorkStation 390</option>
+                                <option value="Precision WorkStation T3400">Precision WorkStation T3400</option>
+                                <option value="Precision WorkStation T3500">Precision WorkStation T3500</option>
+                                <option value="Precision WorkStation T5400">Precision WorkStation T5400</option>
+                                <option value="System Product Name">System Product Name</option>
+                                <option value="To Be Filled By O.E.M.">To Be Filled By O.E.M.</option>
+                                <option value="VirtualBox">VirtualBox</option>
+                                <option value="XPS 13 9360">XPS 13 9360</option>
+                                <option value="XPS 13 9370">XPS 13 9370</option>
+                            </select></span></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="true" valign="top" colspan="2">
+                            <label id="lbl_Country12">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style31" nowrap="true" valign="top"><span id="Serial_x0020_Number0" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            Serial Number:</nobr> </span></td>
+                        <td valign="top" width="350px">
+		<!-- FieldName="Serial Number"
+			 FieldInternalName="Serial_x0020_Number"
+			 FieldType="SPFieldText"
+		  -->
+			                <span dir="none">
+                            <input id="Serial_Number_New" maxlength="255" title="Serial Number" type="text" value="" class="auto-style4"/></span></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="true" valign="top" colspan="2">
+                            <label id="lbl_Country11">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style31" nowrap="true" valign="top"><span id="OS0" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            OS:</nobr> </span></td>
+                        <td valign="top" width="350px">
+		<!-- FieldName="OS"
+			 FieldInternalName="OS"
+			 FieldType="SPFieldChoice"
+		  -->
+			                <span dir="none">
+                            <select id="OS_New" class="" title="OS">
+                                <option value="Mac OS X">Mac OS X</option>
+                                <option value="SLES">SLES</option>
+                                <option value="unknown">unknown</option>
+                                <option value="Windows 10 (1507) - Threshold 1">Windows 10 (1507) - Threshold 1</option>
+                                <option value="Windows 10 (1511) - Threshold 2">Windows 10 (1511) - Threshold 2</option>
+                                <option value="Windows 10 (1607) - Redstone 1">Windows 10 (1607) - Redstone 1</option>
+                                <option value="Windows 10 (1703) - Redstone 2">Windows 10 (1703) - Redstone 2</option>
+                                <option value="Windows 10 (1709) - Redstone 3">Windows 10 (1709) - Redstone 3</option>
+                                <option selected="selected" value="Windows 10 (1803) - Redstone 4">Windows 10 (1803) - Redstone 4</option>
+                                <option value="Windows 10 (1803) - Redstone 4">Windows 10 (1803) - Redstone 4</option>
+                                <option value="Windows 10 (1809) - Redstone 5">Windows 10 (1809) - Redstone 5</option>
+                                <option value="Windows 10 (1903) - 19H1">Windows 10 (1903) - 19H1</option>
+                                <option value="Windows 10 ???">Windows 10 ???</option>
+                                <option value="Windows 10 Enterprise">Windows 10 Enterprise</option>
+                                <option value="Windows 7 SP1">Windows 7 SP1</option>
+                                <option value="Windows 8">Windows 8</option>
+                                <option value="Windows 8.1">Windows 8.1</option>
+                                <option value="Windows 8.1 (Update 1)">Windows 8.1 (Update 1)</option>
+                                <option value="Windows Vista SP2">Windows Vista SP2</option>
+                                <option value="Windows XP (SP2)">Windows XP (SP2)</option>
+                                <option value="Windows XP Professional">Windows XP Professional</option>
+                            </select></span></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="true" valign="top" colspan="2">
+                            <label id="lbl_Country10">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style31" nowrap="true" valign="top"><span id="OperatingSystemVersion0" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            OperatingSystemVersion:&nbsp;&nbsp; </nobr> &nbsp;</span></td>
+                        <td valign="top" width="350px">
+		<!-- FieldName="OperatingSystemVersion"
+			 FieldInternalName="OperatingSystemVersion"
+			 FieldType="SPFieldChoice"
+		  -->
+			                <span dir="none">
+                            <select id="OperatingSystemVersion_New" class="auto-style4" title="OperatingSystemVersion">
+                                <option value="10.0 (10240)">10.0 (10240)</option>
+                                <option value="10.0 (10586)">10.0 (10586)</option>
+                                <option value="10.0 (14393)">10.0 (14393)</option>
+                                <option value="10.0 (15063)">10.0 (15063)</option>
+                                <option value="10.0 (16299)">10.0 (16299)</option>
+                                <option selected="selected" value="10.0 (17134)">10.0 (17134)</option>
+                                <option value="10.0 (17134)">10.0 (17134)</option>
+                                <option value="10.0 (17763)">10.0 (17763)</option>
+                                <option value="10.0 (18362)">10.0 (18362)</option>
+                                <option value="10.0 (18363)">10.0 (18363)</option>
+                                <option value="10.0 (18990)">10.0 (18990)</option>
+                                <option value="10.13 (65)">10.13 (65)</option>
+                                <option value="10.13.1">10.13.1</option>
+                                <option value="10.14 (391)">10.14 (391)</option>
+                                <option value="12.1">12.1</option>
+                                <option value="5.1 (2600)">5.1 (2600)</option>
+                                <option value="5.2 (3790)">5.2 (3790)</option>
+                                <option value="6.0 (6002)">6.0 (6002)</option>
+                                <option value="6.1 (7601)">6.1 (7601)</option>
+                                <option value="6.2 (9200)">6.2 (9200)</option>
+                                <option value="6.3 (9600)">6.3 (9600)</option>
+                                <option value="unknown">unknown</option>
+                            </select></span></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="true" valign="top" colspan="2">
+                            <label id="lbl_Country9">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span id="Date_Assigned_New" >
+                            
+                            Date Device Assigned: </span></td>
+                        <td  valign="top" >
+		<!-- FieldName="Date Device Assigned"
+			 FieldInternalName="Date_x0020_Device_x0020_Assigned"
+			 FieldType="SPFieldDateTime"
+		  -->
+			<span dir="none"><input type="date" value=""  id="Date_x0020_Device_x0020_Assigned_New" title="Date Device Assigned_New" class="auto-style4" disabled ></span>	
+			                </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" colspan="2">
+                            <label id="lbl_Country8">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span id="Device_x0020_is_x0020_Primary0" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            Device is Primary</nobr>:</span></td>
+                        <td valign="top" width="350px">
+		<!-- FieldName="Device is Primary"
+			 FieldInternalName="Device_x0020_is_x0020_Primary"
+			 FieldType="SPFieldBoolean"
+		  -->
+			                <span dir="none">
+                            <input id="Device_x0020_is_x0020_Primary_New" title="Device is Primary" type="checkbox" /></span></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" colspan="2">
+                            <label id="lbl_Country7">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style31" nowrap="true" valign="top"><span id="Device_x0020_Listed_x0020_as_x1" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            Device Listed as Correct</nobr> </span></td>
+                        <td valign="top" width="350px">
+		<!-- FieldName="Device Listed as Correct"
+			 FieldInternalName="Device_x0020_Listed_x0020_as_x00"
+			 FieldType="SPFieldBoolean"
+		  -->
+			                <span dir="none">
+                            <input id="Device_x0020_Listed_x0020_New" title="Device Listed as Correct" type="checkbox" /></span></td>
+                    </tr>
+                    <tr>
+                        <td nowrap="true" valign="top" colspan="2">
+                            <label id="lbl_Country6">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style46" nowrap="true" valign="top"><span id="Justification1" class="ms-h3 ms-standardheader">
+                            <nobr>
+                            Justification</nobr> </span></td>
+                        <td class="auto-style44" valign="top" width="350px">
+                            <textarea id="Justification_New" class="auto-style47" maxlength="255" title="Justification" cols="20" name="S2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style44" nowrap="true" valign="top" colspan="2">
+                            <label id="lbl_Country5">
+                            you must select you location country
+                            </label>
+                        </td>
+                    </tr>
+                    </table>
+            </td>
+        </tr>
+        <tr>
+         <td colspan="2" class="auto-style39">
+             <input id="Button1" type="button" value="Save and go to next device" /></td>
+        </tr>
+    </table>
+</body>
+</html>
