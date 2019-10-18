@@ -1,4 +1,100 @@
-﻿<!DOCTYPE html>
+﻿<script type="text/javascript" src="/teams/PCL%20-%20PCReturn_Locations/Win10/SiteAssets/JavaScript/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/teams/PCL%20-%20PCReturn_Locations/Win10/SiteAssets/JavaScript/jquery-ui.js"></script>
+<link rel="stylesheet" href="/teams/PCL%20-%20PCReturn_Locations/Win10/SiteAssets/JavaScript/jquery-ui.css">
+<script src="https://kit.fontawesome.com/82843df399.js" crossorigin="anonymous"></script>
+<script src="https://microfocusinternational.sharepoint.com/teams/PCL%20-%20PCReturn_Locations/Win10/_layouts/15/SP.Runtime.js"></script>
+<script src="https://microfocusinternational.sharepoint.com/teams/PCL%20-%20PCReturn_Locations/Win10/_layouts/15/SP.js"></script>
+<script src="https://microfocusinternational.sharepoint.com/teams/PCL%20-%20PCReturn_Locations/Win10/_layouts/15/clientpeoplepicker.js"></script>
+<script src="https://microfocusinternational.sharepoint.com/teams/PCL%20-%20PCReturn_Locations/Win10/_layouts/15/SP.UserProfiles.js"></script>
+<script src="/teams/MobileSubscriptions/SiteAssets/JavaScript/uuid-v4.js"></script>
+
+<script>
+
+    window.onerror = function (msg, url, lineNo, columnNo, error) {
+        var string = msg.toLowerCase();
+        var substring = "script error";
+        if (string.indexOf(substring) > -1) {
+            //alert('Script Error: See Browser Console for Detail');
+        } else {
+            var message = [
+                'Message: ' + msg,
+                'URL: ' + url,
+                'Line: ' + lineNo,
+                'Column: ' + columnNo,
+                'Error object: ' + JSON.stringify(error)
+            ].join(' - ');
+            console.log(message);
+            //alert(message);
+            if (msg.includes("The collection has not been initialized. It has not been requested or the request has not been executed.")) {
+                //location.reload();
+            }
+        }
+
+        return false;
+    };
+
+
+    var plans = [];
+    var subsc = [];
+    var planx = new Array();
+    var ordcount = 0;
+    var scriptbase = "/Scripts/";
+    var deferred = $.Deferred();
+    var chkord = "";
+    var subscount = 0;
+
+    $(document).ready(
+        function () {
+            SP.SOD.registerSod('sp.js', 'sp.js');
+            SP.SOD.executeFunc(scriptbase + 'sp.js', 'SP.ClientContext', function () {
+
+                formatform();
+
+                SP.SOD.registerSod('sp.runtime.js', 'sp.runtime.js');
+                SP.SOD.executeFunc(scriptbase + 'sp.runtime.js', 'SP.ClientObject', function () {
+                    SP.SOD.registerSod('sp.UserProfiles.js', 'sp.UserProfiles.js');
+                    SP.SOD.executeFunc(scriptbase + 'sp.UserProfiles.js', 'SP.UserProfiles.PeopleManager', function () {
+                        SP.SOD.executeFunc(scriptbase + 'clientpeoplepicker.js', 'SP.ClientContext', function () {
+                            SP.SOD.registerSod('jquery', '/Scripts/jquery-1.12.4.js');
+                            SP.SOD.registerSod('jqueryui', '/Scripts/jquery-ui-1.12.1/jquery-ui.js');
+                            ExecuteOrDelayUntilScriptLoaded(function () { setTimeout(preload, 3000); }, "sp.js");
+                            PreSaveAction();
+                            header1();
+                        });
+                    });
+                });
+            });
+        });
+
+    function preload() {
+
+        retrieveListItems();
+    }
+
+    //JavaScript Client Object Model CAML Query Syntax 
+    function retrieveListItems() {
+        var clientContext = new SP.ClientContext('https://microfocusinternational.sharepoint.com:443/teams/pcl - pcreturn_locations/win10');
+        var oList = clientContext.get_web().get_lists().getByTitle('User Data');
+        var camlQuery = new SP.CamlQuery();
+        camlQuery.set_viewXml("<View><Query><Where><Contains><FieldRef Name='Title' /><Value  Type='Text'>sheena.m.theriot@microfocus.com</Value></Contains></Where></Query></View>");
+        this.collListItems = oList.getItems(camlQuery);
+        clientContext.load(collListItems);
+        clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded), Function.createDelegate(this, this.onQueryFailed));
+    }
+    function onQuerySucceeded(sender, args) {
+        var listItemInfo = '';
+        var listItemEnumerator = collListItems.getEnumerator();
+        while (listItemEnumerator.moveNext()) {
+            var oListItem = listItemEnumerator.get_current();
+            var title = oListItem.get_item('Title');
+        }
+    }
+    function onQueryFailed(sender, args) {
+        alert('Request failed. ' + args.get_message() + ' - ' + args.get_stackTrace());
+    }
+</script>
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
